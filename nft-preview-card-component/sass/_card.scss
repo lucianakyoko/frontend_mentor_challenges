@@ -1,0 +1,30 @@
+.card {
+  background-color: $Very-dark-blue-card-BG;
+  border-radius: 12px;
+  width: 328px;
+  padding: 2.3rem;
+  margin: 6.2rem auto;
+
+
+
+  &__image {
+    width: 278px;
+    border-radius: 12px;
+  }
+
+  &__title {
+    @include font(22px, 600);
+    @include margin(2.4rem);
+  }
+  
+  &__paraghaph {
+    @include font(1.8rem, 300);
+    @include margin(2.4rem);
+  }
+  
+  &__details {
+    @include margin(2.4rem);
+    display: flex;
+    justify-content: space-between;
+  }
+}

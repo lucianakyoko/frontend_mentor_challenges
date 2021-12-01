@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d192b;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #14253d;
+  border-radius: 12px;
+  width: 328px;
+  padding: 2.3rem;
+  margin: 6.2rem auto;
+}
+
+.card__image {
+  width: 278px;
+  border-radius: 12px;
+}
+
+.card__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 2.4rem;
+}
+
+.card__paraghaph {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 2.4rem;
+}
+
+.card__details {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
