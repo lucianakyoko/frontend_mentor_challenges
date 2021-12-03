@@ -7,14 +7,26 @@ $White: hsl(0, 0%, 100%);
 
 $border-radius: 1.2rem;
 
-@mixin font($size, $weight) {
+@mixin font($size, $weight, $color) {
   font-family: 'Outfit', sans-serif;
   font-size: $size;
   font-weight: $weight;
+  color: $color;
 }
 
 @mixin margin($top){
   margin-top: $top;
+}
+
+@mixin beforeIcon($width, $height, $imageURL) {
+  content: '';
+  width: $width;
+  height: $height;
+  margin-right: .8rem;
+  display: inline-block;
+  background-image: $imageURL;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -32,7 +44,11 @@ body {
   width: 100%;
   height: 100vh;
   background-color: $Very-dark-blue-main-BG;
-  color: $White;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 a {
