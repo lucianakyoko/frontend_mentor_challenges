@@ -30,9 +30,22 @@ a {
   padding: 2.4rem;
 }
 
+@media (min-width: 767px) {
+  .card {
+    width: 350px;
+    height: 594px;
+  }
+}
+
 .card__image {
   width: 27.8rem;
   border-radius: 12px;
+}
+
+@media (min-width: 767px) {
+  .card__image {
+    width: 30.1rem;
+  }
 }
 
 .card__title {
@@ -41,6 +54,15 @@ a {
   font-weight: 600;
   color: white;
   margin-top: 2.4rem;
+}
+
+@media (min-width: 767px) {
+  .card__title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+  }
 }
 
 .card__paraghaph {
@@ -52,6 +74,17 @@ a {
   color: #8bacda;
 }
 
+@media (min-width: 767px) {
+  .card__paraghaph {
+    margin-top: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #8bacda;
+    line-height: 2.4rem;
+  }
+}
+
 .card__details {
   margin-top: 2rem;
   padding-bottom: 1rem;
@@ -61,6 +94,13 @@ a {
   border-bottom: 1px solid #2f415b;
 }
 
+@media (min-width: 767px) {
+  .card__details {
+    margin-top: 2.6rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
 .card__details .left {
   font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
@@ -68,15 +108,24 @@ a {
   color: #00fff7;
 }
 
-.card__details .left ::before {
+.card__details .left::before {
   content: '';
   width: 11px;
   height: 18px;
   margin-right: .8rem;
   display: inline-block;
-  background-image: url("./images/icon-ethereum.svg");
+  background-image: url("../images/icon-ethereum.svg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 767px) {
+  .card__details .left {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #00fff7;
+  }
 }
 
 .card__details .right {
@@ -92,9 +141,18 @@ a {
   height: 13.33px;
   margin-right: .8rem;
   display: inline-block;
-  background-image: url("./images/icon-clock.svg");
+  background-image: url("../images/icon-clock.svg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 767px) {
+  .card__details .right {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #8bacda;
+  }
 }
 
 .card__profile {
@@ -103,6 +161,12 @@ a {
   align-items: center;
   justify-content: left;
   gap: 16px;
+}
+
+@media (min-width: 767px) {
+  .card__profile {
+    margin-top: 1.8rem;
+  }
 }
 
 .card__profile-image {

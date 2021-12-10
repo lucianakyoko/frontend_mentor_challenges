@@ -4,21 +4,38 @@
   background-color: $Very-dark-blue-card-BG;
   border-radius: 12px;
   padding: 2.4rem;
+  @include only-for-desktop-tablet {
+    width: 350px;
+    height: 594px;
+  }
 
   &__image {
     width: 27.8rem;
     border-radius: 12px;
+    @include only-for-desktop-tablet {
+      width: 30.1rem;
+    }
   }
 
   &__title {
     @include font(2.2rem, 600, $White);
     @include margin(2.4rem);
+    
+    @include only-for-desktop-tablet {
+      @include font(2.2rem, 700, $White);
+    }
   }
   
   &__paraghaph {
     @include margin(1.1rem);
     line-height: 2.4rem;
     @include font(1.6rem, 300, $Soft-blue);
+    
+    @include only-for-desktop-tablet {
+      @include margin(1.8rem);
+      @include font(1.8rem, 400, $Soft-blue);
+      line-height: 2.4rem;
+    }
   }
   
   &__details {
@@ -28,18 +45,30 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $Very-dark-blue-line;
+    @include only-for-desktop-tablet {
+      @include margin(2.6rem);
+      padding-bottom: 2.4rem;
+      
+    }
     
     .left {
       @include font(1.4rem, 600, $Cyan);
-      ::before {
-        @include beforeIcon(11px, 18px, url('./images/icon-ethereum.svg'));
+      &::before {
+        @include beforeIcon(11px, 18px, url('../images/icon-ethereum.svg'));
+      }
+      @include only-for-desktop-tablet {
+        @include font(1.6rem, 700, $Cyan);
       }
     }
     
     .right {
       @include font(1.4rem, 400, $Soft-blue);
       &::before {
-        @include beforeIcon(13.33px, 13.33px, url('./images/icon-clock.svg'));
+        @include beforeIcon(13.33px, 13.33px, url('../images/icon-clock.svg'));
+      }
+
+      @include only-for-desktop-tablet {
+        @include font(1.6rem, 400, $Soft-blue);
       }
     }
   }
@@ -49,7 +78,12 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 16px
+    gap: 16px;
+    
+    @include only-for-desktop-tablet {
+      @include margin(1.8rem);
+      
+    }
   }
 
   &__profile-image {
