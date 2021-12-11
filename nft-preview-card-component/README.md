@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Preview](https://github.com/lucianakyoko/frontend_mentor_challenges/blob/main/screenshots/NTF-card_screenshot.png)
 
 
 ### Links
@@ -43,6 +43,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Luciana Kyoko](https://lucianakyoko.netlify.app)
+- Frontend Mentor - [@lucianakyoko](https://www.frontendmentor.io/profile/lucianakyoko)
+- LinkedIn - [Luciana Kyoko](https://www.linkedin.com/in/lucianakyoko/)
