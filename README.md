@@ -2,8 +2,8 @@
 My submissions for the frontend mentor challenges
 
 ---
-<img align="center" alt="Frontend Mentor icon" height="100" width="100" src="https://github.com/lucianakyoko/frontend_mentor_challenges/blob/main/nft-preview-card-component/images/favicon-32x32.png">
- My profile: [Frontend Mentor](https://www.frontendmentor.io/profile/lucianakyoko)
+<img align="center" alt="Frontend Mentor icon" height="32" width="32" src="https://github.com/lucianakyoko/frontend_mentor_challenges/blob/main/nft-preview-card-component/images/favicon-32x32.png"> Frontend Mentor - [@lucianakyoko](https://www.frontendmentor.io/profile/lucianakyoko)
+ </br>
 
 | Challenge | Solution | Repository | Live | Preview |
 | --- | --- | --- | ---| --- |
