@@ -1,0 +1,67 @@
+.form {
+  &__intro {
+    background-color: $color-accent-blue;
+    color: $color-white;
+    font-weight: 400;
+    text-align: center;
+    padding: 2.4rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    border-radius: .8rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__box {
+
+    background-color: $color-white;
+    border-radius: .8rem;
+
+    input:first-child {
+      margin-top: 2.4rem;
+    }
+    input,
+    button {
+      width: 28rem;
+      margin-left: 2.4rem;
+      margin-top: 1.6rem;
+      border-radius: .4rem;
+    }    
+  }
+  
+  &__box-input {
+    border: 1px solid $color-neutral-grayish-blue;
+    padding: 2rem 2rem;
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+  }
+  
+  &__box-button {
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 600;
+    letter-spacing: .2 rem;
+    padding: 2rem 2.8rem;
+    
+    background-color: $color-primary-green;
+    border: none;
+  }
+
+  &__footer {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1.4rem 4rem 2rem 4rem;
+    color: $color-neutral-grayish-blue;
+
+    span {
+      font-weight: 600;
+      color: $color-primary-red;
+    }
+  }
+}

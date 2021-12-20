@@ -3,6 +3,7 @@ $color-primary-green: hsl(154, 59%, 51%);
 $color-accent-blue: hsl(248, 32%, 49%);
 $color-neutral-dark-blue: hsl(249, 10%, 26%);
 $color-neutral-grayish-blue: hsl(246, 25%, 77%);
+$color-white: hsl(0, 0%, 100%);
 
 * {
   margin: 0;
@@ -12,8 +13,15 @@ $color-neutral-grayish-blue: hsl(246, 25%, 77%);
 
 html {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
   background-image: url('../images/bg-intro-mobile.png');
+  background-position: top;
+  background-size: cover;
+  background-color: $color-primary-red;
+  padding: 2.4rem;
 }
+
+@import 'about', 'form'
