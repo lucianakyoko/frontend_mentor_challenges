@@ -1,0 +1,12 @@
+.footer {
+  margin-top: 2rem;
+
+  &__attribution {
+    color: $color-white;
+    text-align: center;
+
+    a {
+      color: $color-accent-blue;
+    }
+  }
+}

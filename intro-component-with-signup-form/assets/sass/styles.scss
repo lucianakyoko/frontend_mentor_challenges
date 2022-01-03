@@ -5,6 +5,10 @@ $color-neutral-dark-blue: hsl(249, 10%, 26%);
 $color-neutral-grayish-blue: hsl(246, 25%, 77%);
 $color-white: hsl(0, 0%, 100%);
 
+@mixin only-for-desktop-tablet {
+  @media (min-width: 767px) { @content; }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +20,33 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
-main {
+body {
   background-image: url('../images/bg-intro-mobile.png');
   background-position: top;
   background-size: cover;
   background-color: $color-primary-red;
   padding: 2.4rem;
+  
+  @include only-for-desktop-tablet {
+    background-image: url('../images/bg-intro-desktop.png');
+    height: 100vh;
+    padding: 0;
+  }
 }
 
-@import 'about', 'form'
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  @include only-for-desktop-tablet {
+    flex-direction: row;
+    padding: 12rem 16.5rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+@import 'about', 'form', 'footer'
